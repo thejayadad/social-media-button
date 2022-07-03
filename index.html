@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+.social {
+    display: flex;
+    margin: 30px;
+     
+}
+.social a {
+    display: block;
+    background: rgba(66, 103, 178 );
+    padding: 20px;
+     
+    transform: perspective(1000px) rotate(-25deg) skew(25deg) translate(0, 0);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    margin: 40px;
+     
+}
+
+#fb {
+    background: rgba(66, 103, 178 );
+}
+
+#fb::before {
+    background: rgba(66, 103, 178 );
+
+}
+#fb::after {
+    background: rgba(66, 103, 178 );
+
+}
+#tw {
+    background: rgba(29, 161, 242 );
+}
+
+#tw::before {
+    background: rgba(29, 161, 242 );
+
+}
+#tw::after {
+    background: rgba(29, 161, 242 );
+
+}
+
+
+.social a::before {
+    dislpay: block;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -20px;
+    top: 10px;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.social a::after {
+    dislpay: block;
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    transform: rotate(0deg) skewX(-45deg);
+    transform: rotate(45deg) scewY(-45deg);
+}
+.social a:hover {
+    transform: perspective(1000px) rotate(-25deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.social a i {
+    color: rgba(256, 256, 256, 1);
+    font-size: 30pt;
+}
+    </style>
+</head>
+<body>
+    <div class="social">
+        <a id="fb" href=""><i class="fab fa-facebook"></i></a>
+        <a id="tw" href=""><i class="fab fa-twitter"></i></a>
+   
+</div>
+</body>
+</html>
